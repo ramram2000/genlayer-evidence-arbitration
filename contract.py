@@ -95,7 +95,6 @@ class EvidenceArbitration(gl.Contract):
         self.appeal_used = False
         self.final_verdict_favors_respondent = False
 
-        self.history = DynArray[str]()
         self._log(f"created: criteria locked by {self.initiator}")
 
     def _log(self, entry: str) -> None:
